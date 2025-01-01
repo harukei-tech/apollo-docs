@@ -303,7 +303,7 @@ Resolver は、schema のどんな type に対応するものでも書くこと�
 
 > You may have noticed that we haven't written resolvers for all our types, yet our queries still run successfully. GraphQL has default resolvers; therefore, we don't have to write a resolver for a field if the parent object has a property with the same name.
 
-ですが、resolver を type に対して書く必要のあるケースをみてみましょう。`Mission` type です。`src/resolvers.js` に移動して以下のコードを `Query` の中に配置しましょう。
+ですが、resolver を type に対して書く必要のあるケースをみてみましょう。`Mission` type です。`src/resolvers.js` に移動して以下のコードを `Query` の下に配置しましょう。
 
 > Let's look at a case where we do want to write a resolver on our `Mission` type. Navigate to `src/resolvers.js` and copy this resolver into our resolver map underneath the `Query` property:
 
